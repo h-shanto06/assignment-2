@@ -108,4 +108,9 @@
   .style {
     width: 410px;
   }
+  .grid-card-container {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 50px;
+    place-content: center;
+  }
 }
