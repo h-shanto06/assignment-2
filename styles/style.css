@@ -90,6 +90,24 @@
 .grid-card-container .grid-card h3 {
   margin: 10px auto;
 }
+.trust {
+  width: 13rem;
+  height: 13rem;
+  position: absolute;
+  right: 550px;
+  top: 1680px;
+}
+.flower-left {
+  width: 30rem;
+}
+.flower-container {
+  display: flex;
+  gap: 50px;
+}
+.flower-written {
+  padding: 10px;
+}
+
 @media only screen and (max-width: 600px) {
   .small {
     display: none;
@@ -112,5 +130,11 @@
     grid-template-columns: repeat(2, 1fr);
     margin-top: 50px;
     place-content: center;
+  }
+  .flower-container {
+    flex-direction: column;
+  }
+  .flower-left {
+    width: 400px;
   }
 }
