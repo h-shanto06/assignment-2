@@ -51,6 +51,45 @@
 .banner-second-hero {
   color: #e95a08;
 }
+.cards {
+  text-align: center;
+}
+.card-image {
+  max-width: 13rem;
+}
+.grid-card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 13px;
+}
+.grid-card {
+  box-shadow: 0 3px 6px #c0bbf5;
+  padding: 6px;
+  border-radius: 5px;
+}
+.grid-card-container .grid-card button {
+  background-color: #e95a08;
+  width: 12rem;
+  height: 2.8rem;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+.grid-card-container .grid-card button:hover {
+  background-color: #c0bbf5;
+  box-shadow: 0 2px 4px #2e2d3b;
+  color: black;
+}
+.grid-card-container .grid-card h4 {
+  margin: 0 auto;
+}
+.grid-card-container .grid-card h3 {
+  margin: 10px auto;
+}
 @media only screen and (max-width: 600px) {
   .small {
     display: none;
