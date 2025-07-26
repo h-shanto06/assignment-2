@@ -80,7 +80,7 @@
   border: none;
 }
 .grid-card-container .grid-card button:hover {
-  background-color: #c0bbf5;
+  background-color: #d6a3ff;
   box-shadow: 0 2px 4px #2e2d3b;
   color: black;
 }
@@ -108,6 +108,189 @@
   padding: 10px;
 }
 
+.dis-head {
+  text-align: center;
+}
+
+.dis-one {
+  background-image: url(../assets/deal-bloom.png);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  border-radius: 10px;
+}
+.dis-tow {
+  background-image: url(../assets/deal-ana.png);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  border-radius: 10px;
+}
+.dis-three {
+  background-image: url(../assets/deal-zabo.png);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.third-p {
+  font-size: 30px;
+  text-shadow: 0 10px 20px #000000;
+  color: #ffffff;
+}
+.first {
+  font-size: 25px;
+  text-shadow: 0 10px 20px #000000;
+}
+.p-p {
+  font-size: 20px;
+  text-shadow: 0 10px 20px #000000;
+  color: #ffffff;
+}
+
+.third {
+  font-size: 45px;
+  text-shadow: 0 10px 20px #000000;
+}
+.dis-bg-cont {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 150px);
+  gap: 10px;
+  text-align: center;
+}
+.dis-three {
+  grid-column: 2/4;
+  grid-row: 1/3;
+}
+.input {
+  background-image: url(../assets/news-letter-bg.png);
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+.input::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 0;
+}
+.input-container {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.input h2 {
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: white;
+}
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.form input[type="email"] {
+  padding: 15px 20px;
+  font-size: 16px;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  outline: none;
+  flex: 1;
+  min-width: 250px;
+}
+.form button {
+  padding: 15px 30px;
+  font-size: 16px;
+  background-color: #f26522;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transition: background 0.3s ease;
+}
+.form button:hover {
+  background-color: #b1abff;
+  box-shadow: 0 2px 4px #2e2d3b;
+  color: black;
+}
+.footer-section {
+  background-color: #f8fbff;
+  padding: 60px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: flex-start;
+}
+.logo {
+  flex: 1 1 250px;
+}
+
+.logo img {
+  width: 120px;
+  margin-bottom: 15px;
+}
+
+.logo p {
+  font-size: 16px;
+  color: #666;
+  max-width: 280px;
+}
+
+.col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.col li {
+  margin-bottom: 10px;
+}
+
+.col a {
+  text-decoration: none;
+  color: #555;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.col a:hover {
+  color: #f26522;
+}
+
+.last-logo {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.last-logo img {
+  width: 28px;
+  height: 28px;
+}
 @media only screen and (max-width: 600px) {
   .small {
     display: none;
@@ -136,5 +319,39 @@
   }
   .flower-left {
     width: 400px;
+  }
+
+  .dis-bg-cont {
+    display: flex;
+    flex-direction: column;
+  }
+  .dis-one,
+  .dis-tow,
+  .dis-three {
+    height: 250px;
+  }
+  .form {
+    flex-direction: column;
+  }
+
+  .form input[type="email"],
+  .form button {
+    border-radius: 5px;
+    width: 80%;
+  }
+
+  .form button {
+    margin-top: 10px;
+    width: 40%;
+  }
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .col,
+  .last-logo {
+    margin-top: 20px;
   }
 }
